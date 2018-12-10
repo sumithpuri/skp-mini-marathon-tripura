@@ -3,7 +3,7 @@
      "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="me.sumithpuri.github.tripura.orm.sample.Doctor" table="DOCTOR_TABLE">
+	<class name="me.sumithpuri.github.tripura.spring.orm.sample.Doctor" table="DOCTOR_TABLE">
 		<id name="doctor_id"></id>
 		<property name="doctor_name"/>
 		<property name="doctor_speciality"/>

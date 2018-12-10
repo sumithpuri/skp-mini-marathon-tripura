@@ -1,4 +1,4 @@
-package me.sumithpuri.github.tripura.orm.sample;
+package me.sumithpuri.github.tripura.spring.orm.sample;
 
 /**
  * MIT License

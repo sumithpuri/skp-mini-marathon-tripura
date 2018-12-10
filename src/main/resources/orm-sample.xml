@@ -35,7 +35,7 @@
 	<property name="location" value="hibernate.properties"/>
 </bean>
 
-<bean id="doctorDao" class="me.sumithpuri.github.tripura.orm.sample.HibernateDoctorDao">
+<bean id="doctorDao" class="me.sumithpuri.github.tripura.spring.orm.sample.HibernateDoctorDao">
 	<property name="hibernateTemplate" ref="hibernateTemplate" />
 </bean>
 

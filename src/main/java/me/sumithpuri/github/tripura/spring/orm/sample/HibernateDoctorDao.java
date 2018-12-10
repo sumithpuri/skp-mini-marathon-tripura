@@ -1,4 +1,6 @@
-package me.sumithpuri.github.tripura.orm.sample;
+package me.sumithpuri.github.tripura.spring.orm.sample;
+
+import java.util.List;
 
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
@@ -30,8 +32,7 @@ import org.springframework.orm.hibernate3.HibernateTemplate;
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES  OR  OTHER  LIABILITY, WHETHER IN AN ACTION  OF  CONTRACT, TORT OR 
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-public class HibernatePatientDao {
-	
+public class HibernateDoctorDao {
 	
 	HibernateTemplate hibernateTemplate;
 
@@ -41,5 +42,26 @@ public class HibernatePatientDao {
 
 	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
 		this.hibernateTemplate = hibernateTemplate;
+	}
+	
+	public Doctor getDoctorById(int doctorId) {
+		
+		return (Doctor) hibernateTemplate.get(Doctor.class, doctorId);
+	}
+	
+	public List<Doctor> getAllDoctorsOnSecondLevelCache() {
+		
+		List results = hibernateTemplate.find(" FROM com.sumsoft.spring.orm.hibernate.Doctor");
+		return results;
+	}
+	
+	public List<Doctor> getAllDoctorsOnHibernateOnly() {
+		
+		List results = hibernateTemplate.find(" FROM com.sumsoft.spring.orm.hibernate.Doctor");
+		return results;
+	}
+	
+	public void saveDoctor(Doctor doctor) {
+		hibernateTemplate.save(doctor);
 	}
 }

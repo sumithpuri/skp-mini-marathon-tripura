@@ -3,8 +3,8 @@ package me.sumithpuri.github.tripura.app;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import me.sumithpuri.github.tripura.orm.sample.Doctor;
-import me.sumithpuri.github.tripura.orm.sample.HibernateDoctorDao;
+import me.sumithpuri.github.tripura.spring.orm.sample.Doctor;
+import me.sumithpuri.github.tripura.spring.orm.sample.HibernateDoctorDao;
 
 /**
  * MIT License

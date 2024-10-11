@@ -1,7 +1,7 @@
 # Tripura (Brainbench Spring 2.5 Certification)
 Brainbench Spring 2.5 Certification (+ Spring In Action Samples)
 <br>
-MIT License, Copyright (c) 2018-19, <a href="https://www.cakeresume.com/sumith-kumar-puri">Sumith Kumar Puri</a><br>
+MIT License, Copyright (c) 2018-19, <a href="http://www.techcto.online/">Sumith Kumar Puri</a><br>
 https://github.com/sumithpuri 
 <br>
 
